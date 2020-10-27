@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "svmapa"
+    }
+  },
+  "defaultProject": "svmapa",
+  "cli": {
+    "analytics": false
+  }
 }
