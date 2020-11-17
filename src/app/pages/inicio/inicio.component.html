@@ -185,17 +185,17 @@
                 </button>
             </div>
             <div *ngFor="let estado of dataJson" class="modal-body modal-dialog-scrollable" id="proof">
-                Extensión territorial: {{estado.chalatenango.nombre}}.
+                Extensión territorial: {{estado.cuscatlan.territorio}}.
                 <br>
                 <br>
-                Fiestas patronales: {{estado.chalatenango.nombre}}.
+                Fiestas patronales: {{estado.cuscatlan.fiestas}}.
                 <br>
                 <br>
-                Nº de habitantes: {{estado.chalatenango.nombre}}.
+                Nº de habitantes: {{estado.cuscatlan.habitantes}}.
             </div>
             <div class="modal-footer">
                 <a href="#" class="link"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></a>
-                <a href="http://localhost:4200/informacion" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
+                <a href="http://localhost:4200/cuscatlan" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
             </div>
         </div>
     </div>
@@ -204,24 +204,24 @@
 <div class="modal fade" id="lalibertad" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">lalibertad</h5>
+            <div class="modal-header" *ngFor="let estado of dataJson">
+                <h5 class="modal-title" id="staticBackdropLabel">{{estado.laLibertad.nombre}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div *ngFor="let estado of dataJson" class="modal-body modal-dialog-scrollable" id="proof">
-                Extensión territorial:
+                Extensión territorial: {{estado.laLibertad.territorio}}.
                 <br>
                 <br>
-                Fiestas patronales:
+                Fiestas patronales: {{estado.laLibertad.fiestas}}.
                 <br>
                 <br>
-                Nº de habitantes:
+                Nº de habitantes: {{estado.laLibertad.habitantes}}.
             </div>
             <div class="modal-footer">
                 <a href="#" class="link"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></a>
-                <a href="http://localhost:4200/informacion" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
+                <a href="http://localhost:4200/lalivertad" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
             </div>
         </div>
     </div>
@@ -230,24 +230,24 @@
 <div class="modal fade" id="morazan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">morazan</h5>
+            <div class="modal-header" *ngFor="let estadooriental of dataOriental">
+                <h5 class="modal-title" id="staticBackdropLabel">{{estadooriental.morazan.nombre}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div *ngFor="let estado of dataJson" class="modal-body modal-dialog-scrollable" id="proof">
-                Extensión territorial:
+            <div *ngFor="let estadooriental of dataOriental" class="modal-body modal-dialog-scrollable" id="proof">
+                Extensión territorial: {{estadooriental.morazan.territorio}}.
                 <br>
                 <br>
-                Fiestas patronales:
+                Fiestas patronales: {{estadooriental.morazan.fiestas}}.
                 <br>
                 <br>
-                Nº de habitantes:
+                Nº de habitantes: {{estadooriental.morazan.habitantes}}.
             </div>
             <div class="modal-footer">
                 <a href="#" class="link"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></a>
-                <a href="http://localhost:4200/informacion" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
+                <a href="http://localhost:4200/morazan" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
             </div>
         </div>
     </div>
@@ -256,24 +256,24 @@
 <div class="modal fade" id="lapaz" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">lapaz</h5>
+            <div class="modal-header" *ngFor="let estado of dataJson">
+                <h5 class="modal-title" id="staticBackdropLabel">{{estado.laPaz.nombre}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div *ngFor="let estado of dataJson" class="modal-body modal-dialog-scrollable" id="proof">
-                Extensión territorial:
+                Extensión territorial: {{estado.laPaz.territorio}}.
                 <br>
                 <br>
-                Fiestas patronales:
+                Fiestas patronales: {{estado.laPaz.fiestas}}.
                 <br>
                 <br>
-                Nº de habitantes:
+                Nº de habitantes: {{estado.laPaz.habitantes}}.
             </div>
             <div class="modal-footer">
                 <a href="#" class="link"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></a>
-                <a href="http://localhost:4200/informacion" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
+                <a href="http://localhost:4200/lapaz" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
             </div>
         </div>
     </div>
@@ -282,24 +282,24 @@
 <div class="modal fade" id="santanana" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">santanana</h5>
+            <div class="modal-header" *ngFor="let estadooccidental of dataOccidental">
+                <h5 class="modal-title" id="staticBackdropLabel">{{estadooccidental.santaAna.nombre}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div *ngFor="let estado of dataJson" class="modal-body modal-dialog-scrollable" id="proof">
-                Extensión territorial:
+            <div *ngFor="let estadooccidental of dataOccidental" class="modal-body modal-dialog-scrollable" id="proof">
+                Extensión territorial: {{estadooccidental.santaAna.territorio}}.
                 <br>
                 <br>
-                Fiestas patronales:
+                Fiestas patronales: {{estadooccidental.santaAna.fiestas}}.
                 <br>
                 <br>
-                Nº de habitantes:
+                Nº de habitantes: {{estadooccidental.santaAna.habitantes}}.
             </div>
             <div class="modal-footer">
                 <a href="#" class="link"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></a>
-                <a href="http://localhost:4200/informacion" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
+                <a href="http://localhost:4200/santaana" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
             </div>
         </div>
     </div>
@@ -308,24 +308,24 @@
 <div class="modal fade" id="sanmiguel" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">sanmiguel</h5>
+            <div class="modal-header" *ngFor="let estadooriental of dataOriental">
+                <h5 class="modal-title" id="staticBackdropLabel">{{estadooriental.sanMiguel.nombre}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div *ngFor="let estado of dataJson" class="modal-body modal-dialog-scrollable" id="proof">
-                Extensión territorial:
+            <div *ngFor="let estadooriental of dataOriental" class="modal-body modal-dialog-scrollable" id="proof">
+                Extensión territorial: {{estadooriental.sanMiguel.territorio}}.
                 <br>
                 <br>
-                Fiestas patronales:
+                Fiestas patronales: {{estadooriental.sanMiguel.fiestas}}.
                 <br>
                 <br>
-                Nº de habitantes:
+                Nº de habitantes: {{estadooriental.sanMiguel.habitantes}}.
             </div>
             <div class="modal-footer">
                 <a href="#" class="link"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></a>
-                <a href="http://localhost:4200/informacion" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
+                <a href="http://localhost:4200/sanmiguel" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
             </div>
         </div>
     </div>
@@ -334,24 +334,24 @@
 <div class="modal fade" id="sonsonate" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">sonsonate</h5>
+            <div class="modal-header" *ngFor="let estadooccidental of dataOccidental">
+                <h5 class="modal-title" id="staticBackdropLabel">{{estadooccidental.sonsonate.nombre}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div *ngFor="let estado of dataJson" class="modal-body modal-dialog-scrollable" id="proof">
-                Extensión territorial:
+            <div *ngFor="let estadooccidental of dataOccidental" class="modal-body modal-dialog-scrollable" id="proof">
+                Extensión territorial: {{estadooccidental.sonsonate.territorio}}.
                 <br>
                 <br>
-                Fiestas patronales:
+                Fiestas patronales: {{estadooccidental.sonsonate.fiestas}}.
                 <br>
                 <br>
-                Nº de habitantes:
+                Nº de habitantes: {{estadooccidental.sonsonate.habitantes}}.
             </div>
             <div class="modal-footer">
                 <a href="#" class="link"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></a>
-                <a href="http://localhost:4200/informacion" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
+                <a href="http://localhost:4200/sonsonate" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
             </div>
         </div>
     </div>
@@ -360,24 +360,24 @@
 <div class="modal fade" id="sanvicente" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">sanvicente</h5>
+            <div class="modal-header" *ngFor="let estado of dataJson">
+                <h5 class="modal-title" id="staticBackdropLabel">{{estado.sanVicente.nombre}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div *ngFor="let estado of dataJson" class="modal-body modal-dialog-scrollable" id="proof">
-                Extensión territorial:
+                Extensión territorial: {{estado.sanVicente.territorio}}.
                 <br>
                 <br>
-                Fiestas patronales:
+                Fiestas patronales: {{estado.sanVicente.fiestas}}.
                 <br>
                 <br>
-                Nº de habitantes:
+                Nº de habitantes: {{estado.sanVicente.habitantes}}.
             </div>
             <div class="modal-footer">
                 <a href="#" class="link"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></a>
-                <a href="http://localhost:4200/informacion" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
+                <a href="http://localhost:4200/sanvicente" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
             </div>
         </div>
     </div>
@@ -386,24 +386,24 @@
 <div class="modal fade" id="launion" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">launion</h5>
+            <div class="modal-header" *ngFor="let estadooriental of dataOriental">
+                <h5 class="modal-title" id="staticBackdropLabel">{{estadooriental.laUnion.nombre}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div *ngFor="let estado of dataJson" class="modal-body modal-dialog-scrollable" id="proof">
-                Extensión territorial:
+            <div *ngFor="let estadooriental of dataOriental" class="modal-body modal-dialog-scrollable" id="proof">
+                Extensión territorial: {{estadooriental.laUnion.territorio}}.
                 <br>
                 <br>
-                Fiestas patronales:
+                Fiestas patronales: {{estadooriental.laUnion.fiestas}}.
                 <br>
                 <br>
-                Nº de habitantes:
+                Nº de habitantes: {{estadooriental.laUnion.habitantes}}.
             </div>
             <div class="modal-footer">
                 <a href="#" class="link"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></a>
-                <a href="http://localhost:4200/informacion" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
+                <a href="http://localhost:4200/launion" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
             </div>
         </div>
     </div>
@@ -412,24 +412,24 @@
 <div class="modal fade" id="usulutan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">usulutan</h5>
+            <div class="modal-header" *ngFor="let estadooriental of dataOriental">
+                <h5 class="modal-title" id="staticBackdropLabel">{{estadooriental.usulutan.nombre}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div *ngFor="let estado of dataJson" class="modal-body modal-dialog-scrollable" id="proof">
-                Extensión territorial:
+            <div *ngFor="let estadooriental of dataOriental" class="modal-body modal-dialog-scrollable" id="proof">
+                Extensión territorial: {{estadooriental.usulutan.territorio}}.
                 <br>
                 <br>
-                Fiestas patronales:
+                Fiestas patronales: {{estadooriental.usulutan.fiestas}}.
                 <br>
                 <br>
-                Nº de habitantes:
+                Nº de habitantes: {{estadooriental.usulutan.habitantes}}.
             </div>
             <div class="modal-footer">
                 <a href="#" class="link"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></a>
-                <a href="http://localhost:4200/informacion" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
+                <a href="http://localhost:4200/usulutan" class="link"><button type="button" class="btn btn-primary">Leer más</button></a>
             </div>
         </div>
     </div>

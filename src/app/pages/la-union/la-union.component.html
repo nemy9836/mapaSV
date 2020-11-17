@@ -1,189 +1,193 @@
-<div id="containerPrincipal" *ngFor="let estado of launion">
+<div id="containerPrincipal" *ngFor="let dataLaunion of launion">
 
-    <div class="slider">
+  <div class="slider">
 
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{{estado.sansalvador.img1}}" class="d-block w-100" alt="..." width="500px" height="500px">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                  <p></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="{{estado.sansalvador.img2}}" class="d-block w-100" alt="..." width="500px" height="500px">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                  <p></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="{{estado.sansalvador.img3}}" class="d-block w-100" alt="..." width="500px" height="500px">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                  <p></p>
-                </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{dataLaunion.laUnion.img1}}" class="d-block w-100" alt="..." width="500px" height="500px">
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p></p>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <div class="carousel-item">
+              <img src="{{dataLaunion.laUnion.img2}}" class="d-block w-100" alt="..." width="500px" height="500px">
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="{{dataLaunion.laUnion.img3}}" class="d-block w-100" alt="..." width="500px" height="500px">
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p></p>
+              </div>
+            </div>
           </div>
-        
-    </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      
+  </div>
 
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <p class="uno">
+      Datos del departamento de {{dataLaunion.laUnion.nombre}}.
+  </p>
+
+  <br>
+
+  <p class="dos">
+
+      ° Territorio: {{dataLaunion.laUnion.territorio}}.
+      <br>
+      ° fiestas: {{dataLaunion.laUnion.fiestas}}.
+      <br>
+      ° habitantes: {{dataLaunion.laUnion.habitantes}}.
+      <br>
+      ° alcalde: {{dataLaunion.laUnion.alcalde}}.
+
+  </p>
+
+  <br>
+
+  <p class="uno">
+
+    Datos históricos.
+    
+  </p>
+
+  <p class="tres">
+
+    <b>historia:</b> {{dataLaunion.laUnion.datoshistoricos.historia}}
+
+    <br>
+    <br>
+    
+  </p>
+
+  <p class="uno">
+
+    Municipios.
+    
+  </p>
+
+  <p class="dos">
+
+    <b>Municipios:</b> 
+    {{dataLaunion.laUnion.municipios.municipio1}}, 
+    {{dataLaunion.laUnion.municipios.municipio2}},
+    {{dataLaunion.laUnion.municipios.municipio3}},
+    {{dataLaunion.laUnion.municipios.municipio4}},
+    {{dataLaunion.laUnion.municipios.municipio5}}.
+
+    <br>
+    <br>
+
+  </p>
+
+  <p class="uno">
+
+    Centro turísticos.
+    
+    
+  </p>
+
+  <p class="dos">
+
+    <b>El poblado de Intipuca:</b> {{dataLaunion.laUnion.cturisticos.playaIntipuca}}
+    
+    <br>
+    <br>
+    
+    <b>El golfo de Fonseca:</b> {{dataLaunion.laUnion.cturisticos.golfoFonseca}}
+    
+    <br>
+    <br>
+
+  </p>
+
+  <p class="uno">
+
+    Lagos.
+    
+  </p>
+
+  <p class="dos">
+
+    <b>lago de Olomega:</b> {{dataLaunion.laUnion.lagos.lagoOlomega}}
+    
+    <br>
+    <br>
+
+  </p>
+
+  <p class="uno">
+
+    Ríos.
+    
+  </p>
+
+  <p class="dos">
+
+    <b>Río goascoran:</b> {{dataLaunion.laUnion.rios.rioGoascoran}}
+    
+    <br>
+    <br>
+
+  </p>
+
+  <p class="uno">
+
+    Volcanes.
+    
+  </p>
+
+  <p class="dos">
+
+    <b>El Volcan De Conchagua:</b> {{dataLaunion.laUnion.volcanes.volcanConchagua}}
+    
+    <br>
+    <br>
+    
+  </p>
+
+  <p class="uno">
+
+    Personajes.
+    
+  </p>
+
+  <p class="dos">
+
+    <b>Juan Jose Guzman:</b> {{dataLaunion.laUnion.personajes.joseGuzman}}
+    
+    <br>
+    <br>
+
+    <b>Napoleon Viera Altamirano:</b> {{dataLaunion.laUnion.personajes.napoleonAltamirano}}
     <br>
     <br>
     <br>
     <br>
 
-    <p class="uno">
-        Datos del departamento de {{estado.sansalvador.nombre}}.
-    </p>
-
-    <br>
-
-    <p class="dos">
-
-        ° Territorio: {{estado.sansalvador.territorio}}.
-        <br>
-        ° fiestas: {{estado.sansalvador.fiestas}}.
-        <br>
-        ° habitantes: {{estado.sansalvador.habitantes}}.
-        <br>
-        ° alcalde: {{estado.sansalvador.alcalde}}.
-
-    </p>
-
-    <br>
-
-    <p class="uno">
-
-      Datos históricos.
-      
-    </p>
-
-    <p class="tres">
-
-      <b>colonial:</b> {{estado.sansalvador.datoshistoricos.colonial}}
-
-      <br>
-      <br>
-      
-    </p>
-
-    <p class="uno">
-
-      Municipios.
-      
-    </p>
-
-    <p class="dos">
-
-      <b>Municipios:</b> {{estado.sansalvador.municipios.municipio1}}, {{estado.sansalvador.municipios.municipio2}}
-
-      <br>
-      <br>
-
-    </p>
-
-    <p class="uno">
-
-      Centro turísticos.
-      
-      
-    </p>
-
-    <p class="dos">
-
-      <b>El Museo de Arte de El Salvador (MARTE):</b> {{estado.sansalvador.cturisticos.museoArte}}
-      
-      <br>
-      <br>
-      
-      <b>La Iglesia del Rosario:</b> {{estado.sansalvador.cturisticos.iglesiaRosario}}
-      
-      <br>
-      <br>
-
-    </p>
-
-    <p class="uno">
-
-      Lagos.
-      
-    </p>
-
-    <p class="dos">
-
-      <b>lagoSuchitlan:</b> {{estado.sansalvador.lagos.lagoIlopango}}
-      
-      <br>
-      <br>
-
-    </p>
-
-    <p class="uno">
-
-      Ríos.
-      
-    </p>
-
-    <p class="dos">
-
-      <b>El río Jiboa:</b> {{estado.sansalvador.rios.rioAcelhuate}}
-      
-      <br>
-      <br>
-
-    </p>
-
-    <p class="uno">
-
-      Volcanes.
-      
-    </p>
-
-    <p class="dos">
-
-      <b>Volcanes:</b> {{estado.sansalvador.volcanes.Boqueron}}
-      
-      <br>
-      <br>
-      
-    </p>
-
-    <p class="uno">
-
-      Personajes.
-      
-    </p>
-
-    <p class="dos">
-
-      <b>Alfonso Quiñónez Molina:</b> {{estado.sansalvador.personajes.alfonsoMolina}}
-      
-      <br>
-      <br>
-
-      <b>Romero Bosque:</b> En 1892 inició una larga carrera política al ser elegido diputado a la Asamblea Nacional. También sirvió como juez de primera instancia y magistrado en el poder judicial. En el 23 de marzo de 1901, la Asamblea Nacional Legislativa eligió los Magistrados de la Corte Suprema de Justicia y Cámaras Seccionales, siendo Tercer Magistrado en la Cámara Primera de Segunda Instancia el Dr. Pío Romero Bosque.1​ En el gobierno de los presidentes Jorge Meléndez (1919-1923) y Alfonso Quiñonez Molina (1923-1927) ocupó los cargos de Ministro de Guerra y Ministro de Gobernación.
-
-      <br>
-      <br>
-      <br>
-      <br>
-
-    </p>
+  </p>
 
 </div>

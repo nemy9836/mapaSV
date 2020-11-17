@@ -17,12 +17,12 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(): void {
 
-    /*setTimeout(function(){ windownsClose() }, 8000);
+    setTimeout(function(){ windownsClose() }, 8000);
     
     function windownsClose(){
       document.getElementById('windowsClose').style.display = 'none';
     }
-*/
+
     //Guarda todos los datos del json en la variable data como un objeto
     this.peticionservice.getCentral()
     .subscribe( (resp: any) =>{
