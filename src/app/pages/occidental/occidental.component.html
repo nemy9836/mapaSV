@@ -11,31 +11,43 @@
         <div class="card h-100">
             <!--https://lh3.googleusercontent.com/proxy/5PBZLrpqdYdUb9-T4e_b7cexfcYRoC6rxC2S55hRcxjN4XR7JqPbw0E0nCYxFG6gxi-SBrUeuBSe8mutfM8NA8fhh76u6pILfFhK_hMSpsjwSpKIGrnOF1b2we_DG_QKqTysno3wceh-vA-->
           <img src="../../../assets/occidental/1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5  class="card-title"></h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button>
+          <div class="card-body" *ngFor="let estado of departamentos">
+
+            <h5  class="card-title">{{estado.santaAna.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.santaAna.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.santaAna.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.santaAna.habitantes}}</p>
+
+            </div>
+            <a href="http://localhost:4200/santaana"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
         </div>
       </div>
       <div class="col mb-4">
         <div class="card h-100">
           <img src="../../../assets/occidental/2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a short card.</p>
+          <div class="card-body" *ngFor="let estado of departamentos">
+
+            <h5  class="card-title">{{estado.ahuachapan.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.ahuachapan.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.ahuachapan.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.ahuachapan.habitantes}}</p>
+
           </div>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button>
+          <a href="http://localhost:4200/ahuachapan"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
         </div>
       </div>
       <div class="col mb-4">
         <div class="card h-100">
           <img src="../../../assets/occidental/3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <div class="card-body" *ngFor="let estado of departamentos">
+
+            <h5  class="card-title">{{estado.sonsonate.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.sonsonate.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.sonsonate.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.sonsonate.habitantes}}</p>
+
           </div>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button>
+          <a href="http://localhost:4200/sonsonate"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
         </div>
       </div>
     </div>

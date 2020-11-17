@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PetitionsService } from '../../services/petitions.service';
 
 @Component({
   selector: 'app-oriental',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrientalComponent implements OnInit {
 
-  constructor() { }
+  departamentos = [];
 
-  ngOnInit(): void {
+  constructor(private peticionservice:PetitionsService) { 
+    
+  }
+  
+  ngOnInit(): void{
+    
+    this.peticionservice.getOriental()
+    .subscribe( (resp: any) =>{
+
+      this.departamentos = resp;
+
+    });
+
   }
 
 }

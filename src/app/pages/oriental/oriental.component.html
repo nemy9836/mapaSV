@@ -11,45 +11,55 @@
         <div class="card h-100">
             <!--https://lh3.googleusercontent.com/proxy/5PBZLrpqdYdUb9-T4e_b7cexfcYRoC6rxC2S55hRcxjN4XR7JqPbw0E0nCYxFG6gxi-SBrUeuBSe8mutfM8NA8fhh76u6pILfFhK_hMSpsjwSpKIGrnOF1b2we_DG_QKqTysno3wceh-vA-->
           <img src="../../../assets/oriental/1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5  class="card-title"></h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="card-body" *ngFor="let estado of departamentos">
+
+            <h5  class="card-title">{{estado.sanMiguel.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.sanMiguel.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.sanMiguel.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.sanMiguel.habitantes}}</p>
             
         </div>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button>
+        <a href="http://localhost:4200/sanmiguel"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
         </div>
       </div>
       <div class="col mb-4">
         <div class="card h-100">
           <img src="../../../assets/oriental/2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a short card.</p>
+          <div class="card-body" *ngFor="let estado of departamentos">
+
+            <h5  class="card-title">{{estado.morazan.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.morazan.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.morazan.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.morazan.habitantes}}</p>
             
           </div>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button>
+          <a href="http://localhost:4200/morazan"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
         </div>
       </div>
       <div class="col mb-4">
         <div class="card h-100">
           <img src="../../../assets/oriental/3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            
+          <div class="card-body" *ngFor="let estado of departamentos">
+
+            <h5  class="card-title">{{estado.usulutan.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.usulutan.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.usulutan.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.usulutan.habitantes}}</p>
         </div>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button>
+        <a href="http://localhost:4200/usulutan"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
         </div>
       </div>
       <div class="col mb-4">
         <div class="card h-100">
           <img src="../../../assets/oriental/4.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            
+          <div class="card-body" *ngFor="let estado of departamentos">
+
+            <h5  class="card-title">{{estado.laUnion.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.laUnion.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.laUnion.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.laUnion.habitantes}}</p>
         </div>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button>
+        <a href="http://localhost:4200/launion"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
         </div>
       </div>
     </div>
