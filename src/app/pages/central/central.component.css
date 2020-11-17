@@ -1,0 +1,23 @@
+.containerPrimary{
+    padding-top: 13.5%;
+}
+
+.zone{
+    text-align: center;
+}
+
+.row{
+    margin-top: 2%;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-body{
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+}

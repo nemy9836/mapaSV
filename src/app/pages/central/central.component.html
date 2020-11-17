@@ -1,1 +1,102 @@
-<p>central works!</p>
+<div class="containerPrimary">
+
+  <div class="zone">
+
+    <h1>Zona central</h1>
+  
+  </div>
+  
+  <!--*ngFor="let estado of nombres" {{estado.nombre}}-->
+  
+  <div class="row row-cols-1 row-cols-md-3">
+      <div class="col mb-4">
+        <div class="card h-100">
+            <!--https://lh3.googleusercontent.com/proxy/5PBZLrpqdYdUb9-T4e_b7cexfcYRoC6rxC2S55hRcxjN4XR7JqPbw0E0nCYxFG6gxi-SBrUeuBSe8mutfM8NA8fhh76u6pILfFhK_hMSpsjwSpKIGrnOF1b2we_DG_QKqTysno3wceh-vA-->
+          <img src="../../../assets/central/1.jpg" class="card-img-top" alt="...">
+          <div *ngFor="let estado of nombres" class="card-body">
+            <h5  class="card-title">{{estado.sansalvador.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.sansalvador.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.sansalvador.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.sansalvador.habitantes}}</p>
+          </div>
+          <a href="http://localhost:4200/informacion"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="../../../assets/central/2.jpg" class="card-img-top" alt="...">
+          <div *ngFor="let estado of nombres" class="card-body" >
+            <h5 class="card-title">{{estado.chalatenango.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.chalatenango.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.chalatenango.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.chalatenango.habitantes}}</p>
+          </div>
+          <a href="http://localhost:4200/chalatenango"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="../../../assets/central/3.jpg" class="card-img-top" alt="...">
+          <div *ngFor="let estado of nombres" class="card-body">
+            <h5 class="card-title">{{estado.cabanas.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.cabanas.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.cabanas.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.cabanas.habitantes}}</p>
+          </div>
+          <a href="http://localhost:4200/cabanas"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="../../../assets/central/4.jpg" class="card-img-top" alt="...">
+          <div *ngFor="let estado of nombres" class="card-body">
+            <h5 class="card-title">{{estado.cuscatlan.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.cuscatlan.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.cuscatlan.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.cuscatlan.habitantes}}</p>
+          </div>
+          <a href="http://localhost:4200/cuscatlan"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="../../../assets/central/5.jpg" class="card-img-top" alt="...">
+          <div *ngFor="let estado of nombres" class="card-body">
+            <h5 class="card-title">{{estado.laLibertad.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.laLibertad.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.laLibertad.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.laLibertad.habitantes}}</p>
+          </div>
+          <a href="http://localhost:4200/lalivertad"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="../../../assets/central/6.jpg" class="card-img-top" alt="...">
+          <div *ngFor="let estado of nombres" class="card-body">
+            <h5 class="card-title">{{estado.sanVicente.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.sanVicente.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.sanVicente.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.sanVicente.habitantes}}</p>
+          </div>
+          <a href="http://localhost:4200/sanvicente"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="../../../assets/central/7.jpg" class="card-img-top" alt="...">
+          <div *ngFor="let estado of nombres" class="card-body">
+            <h5 class="card-title">{{estado.laPaz.nombre}}</h5>
+            <p class="card-text">Extensión territorial: {{estado.laPaz.territorio}}</p>
+            <p class="card-text">Fiestas patronales: {{estado.laPaz.fiestas}}</p>
+            <p class="card-text">Número de habitantes: {{estado.laPaz.habitantes}}</p>
+          </div>
+          <a href="http://localhost:4200/lapaz"><button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button></a>
+        </div>
+      </div>
+    </div>
+  
+
+
+</div>
+

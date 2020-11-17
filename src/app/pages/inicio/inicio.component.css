@@ -1,0 +1,68 @@
+*{
+    margin-top: 8%;
+}
+
+.map__image{
+    width: 100%;
+}
+
+#region-A,
+#region-J,
+#region-H{
+    fill: #A4CED2;
+    stroke: #FFF;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+#region-C,
+#region-E,
+#region-B,
+#region-G,
+#region-L,
+#region-K,
+#region-D{
+    fill: #d38a8a;
+    stroke: #FFF;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+#region-F,
+#region-I,
+#region-M,
+#region-N{
+    fill: #9ac08f;
+    stroke: #FFF;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+.map__image path:hover{
+    fill: #46abb4;
+}
+
+.windows{
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    left: 32%;
+    top: 35%;
+    display: none;
+}
+
+.alert{
+    margin-top: 5%;
+    width: 76%;
+    height: 85%;
+    position: absolute;
+    background-color: rgba(136, 205, 141, 0.5);
+}
+
+.alert-heading{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
